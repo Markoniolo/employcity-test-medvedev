@@ -1,0 +1,18 @@
+footer.footer
+  .footer__cont.cont
+    .footer__area
+      .footer__copyright © 2018 «LOREMIPSUM.NET» Все права защищены.
+      .footer__separator
+      .footer__list
+        each item, index in ['Qiwi wallet','Yandex Money','Web Money']
+          .footer__item
+            img.footer__icon(src=staticImg(`ic_pay_${index+1}.svg`) alt='')
+            .footer__note= item
+      .footer__separator
+      .footer__list
+        a.footer__link(href='mailto:info@ipsum228.com')
+          img.footer__icon(src=staticImg(`ic_contacts_1.svg`) alt='')
+          .footer__note info@ipsum228.com
+        a.footer__link(href='#' target='_blank')
+          img.footer__icon(src=staticImg(`ic_contacts_2.svg`) alt='')
+          .footer__note Мы вконтакте

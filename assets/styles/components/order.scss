@@ -1,0 +1,176 @@
+.order {
+  @include bgIcon('order/order-bg.png');
+  background-size: cover;
+  padding: 121px 0 151px;
+  color: $white;
+  @include media(md) {
+    padding: 60px 0;
+  }
+}
+
+.order__cont {
+
+}
+
+.order__title {
+  margin-bottom: 30px;
+  text-align: center;
+  @include media(md) {
+    margin-bottom: 15px;
+  }
+}
+
+.order__sub-title {
+  text-align: center;
+  font-size: 18px;
+  color: #bbb;
+  margin-bottom: 80px;
+  @include media(md) {
+    margin-bottom: 40px;
+  }
+}
+
+.order__steps {
+  display: flex;
+  margin-bottom: 80px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include media(md) {
+    margin-bottom: 40px;
+  }
+}
+
+.order__step {
+  padding: 0 10px;
+  max-width: 209px;
+  width: 100%;
+  position: relative;
+  &:not(:last-of-type):not(:nth-child(5n)) {
+    &::before {
+      content: '';
+      @include bgIcon('order/order-step-separator.svg');
+      position: absolute;
+      top: 50px;
+      left: 165px;
+      height: 6px;
+      width: 110px;
+      @include media(lg) {
+        content: none;
+      }
+    }
+  }
+}
+
+.order__step-circle {
+  margin: 0 auto 20px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: $blue;
+  border: 5px solid #286690;
+}
+
+.order__step-icon {
+  width: 55px;
+  height: 55px;
+}
+
+.order__step-text {
+  text-align: center;
+}
+
+.order__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  @include media(md) {
+    gap: 20px;
+  }
+}
+
+.order__label {
+  max-width: 370px;
+  width: 100%;
+  @include media(lg) {
+    max-width: calc(50% - 20px);
+  }
+  @include media(sm) {
+    max-width: 100%;
+  }
+  &_wide {
+    max-width: 770px;
+    width: 100%;
+    @include media(lg) {
+      max-width: calc(50% - 20px);
+    }
+    @include media(sm) {
+      max-width: 100%;
+    }
+  }
+}
+
+.order__select {
+
+}
+
+.order__input {
+
+}
+
+.order__range {
+
+}
+
+.order__range-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.order__range-text {
+  font-size: 18px;
+  @include media(xs) {
+    font-size: 12px;
+  }
+}
+
+.order__range-value {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  @include media(xs) {
+    font-size: 14px;
+  }
+}
+
+
+.order__file {
+  max-width: 370px;
+  width: 100%;
+  @include media(lg) {
+    max-width: 100%;
+  }
+}
+
+.order__submit-box {
+  width: 100%;
+  text-align: center;
+  margin-top: 22px;
+  @include media(lg) {
+    margin-top: 20px;
+  }
+}
+
+.order__submit {
+  max-width: 370px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 15px;
+}

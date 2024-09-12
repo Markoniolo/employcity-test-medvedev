@@ -1,0 +1,17 @@
+.rangeslider__fill, .rangeslider__fill__bg {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid $white;
+}
+
+.rangeslider__fill {
+  background-color: $blue;
+}
+
+.rangeslider__handle {
+  width: 25px;
+  height: 25px;
+  background-color: #42a9ed;
+  border: 3px solid #286690;
+  top: calc(50% + 2px);
+}

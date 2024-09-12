@@ -1,0 +1,78 @@
+.cap {
+  @include bgIcon('cap/cap-bg.png');
+  background-size: cover;
+  @include media(md) {
+    background: $white;
+  }
+}
+
+.cap__cont {
+
+}
+
+.cap__area {
+  min-height: 850px;
+  padding: 200px 0;
+  max-width: 810px;
+  @include media(md) {
+    padding: 120px 0 40px;
+    min-height: auto;
+  }
+}
+
+.cap__caption {
+  margin-bottom: 93px;
+  @include media(md) {
+    margin-bottom: 20px;
+  }
+}
+
+.cap__box {
+  margin-bottom: 80px;
+  @include media(md) {
+    margin-bottom: 20px;
+  }
+}
+
+.cap__text {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.cap__list {
+
+}
+
+.cap__item {
+  font-size: 20px;
+  padding-left: 26px;
+  position: relative;
+  &::before {
+    content: '';
+    width: 25px;
+    height: 22px;
+    @include bgIcon('ic_list_line.svg');
+    position: absolute;
+    top: 1px;
+    left: 0;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+}
+
+.cap__btns {
+  display: flex;
+  gap: 0 30px;
+  @include media(xs) {
+    flex-direction: column;
+    gap: 10px 0;
+  }
+}
+
+.cap__btn {
+  @include media(xs) {
+    width: 100%;
+  }
+}

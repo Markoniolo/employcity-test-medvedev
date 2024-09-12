@@ -1,1 +1,2 @@
-# employcity-test-medvedev
+# Версия NODE.JS для запуска 16.17.0
+# Пакетный менеджер YARN

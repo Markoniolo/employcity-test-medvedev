@@ -1,0 +1,42 @@
+-
+  const orderSteps = [
+    'Lorem ipsum dolor sit amet',
+    'Сonsecteturadipiscing elit',
+    'Sed do eiusmod tempor',
+    'Esse cillum dolore eu fugiat',
+    'Excepteur sint occaecat cupidatat non proident',
+  ]
+  const selectOptions = [
+    'Sed ut perspiciatis','Nemo enim ipsam','Et harum quidem','Temporibus autem','Itaque earum rerum',
+    'Sed ut perspiciatis','Nemo enim ipsam','Et harum quidem','Temporibus autem','Itaque earum rerum',
+  ]
+
+section.order
+  .order__cont.cont
+    h2.order__title.title Оформление Заказа
+    .order__sub-title Перед заполнением формы ознакомьтесь с нашей схемой работы!
+    .order__steps
+      each item, index in orderSteps
+        .order__step
+          .order__step-circle
+            img.order__step-icon(src=staticImg(`order/ic_order_${index+1}.svg`) alt='')
+          .order__step-text= item
+    form.order__form
+      label.order__label
+        select.custom-select(data-role="custom-select" name="select")
+          each item in selectOptions
+            option(value=item)= item
+      label.order__label
+        input.order__input.input(type='email' placeholder='Ваш e-mail' name="email")
+      label.order__label
+        input.order__input.input(type='text' placeholder='Ваше имя' name="name")
+      label.order__label.order__label_wide
+        .order__range-top
+          .order__range-text Sed ut perspiciatis, unde omnis iste natus
+          .order__range-value 75 %
+        input.order__range(data-role="range-slider" data-target='order__range-value' type='range' min="0" max="100" step="1" value="75" name="percent")
+      label.order__file.file
+        span Прикрепить файл
+        input(type='file' name="file")
+      .order__submit-box
+        button.order__submit.btn-blue Отправить

@@ -1,0 +1,20 @@
+.link-white {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $white;
+  text-decoration: none;
+}
+
+a.link-white {
+  transition-duration: $transition-duration;
+  transition-property: color;
+  &:hover {
+    color: $blue;
+  }
+}
+
+span.link-white {
+  color: #43abf0;
+}

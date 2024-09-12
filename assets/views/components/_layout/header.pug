@@ -1,0 +1,13 @@
+.header-layer(data-element="header-layer")
+header.header(data-element="header")
+  .header__cont.cont
+    .header__area
+      .header__logo
+        img.header__logo-image(src=staticImg('logo.svg') alt='')
+      nav.header__nav
+        each item, index in ['Бизнес','О нас','Цены','Оформить заказ']
+          if index === 0
+            span.header__link.link-white= item
+          else
+            a.header__link.link-white(href='#')= item
+      burger.header__burger(data-element="header-burger")
