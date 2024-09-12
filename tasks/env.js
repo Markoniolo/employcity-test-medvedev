@@ -4,7 +4,7 @@ const hash = `${Date.now()}`.substring(0, 8)
 module.exports = {
   production,
   hash,
-  outputFolder: production ? 'prod' : 'dev',
+  outputFolder: production ? 'docs' : 'dev',
   url: '',
   staticFolder: 'statics'
 }
